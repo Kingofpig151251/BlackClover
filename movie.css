@@ -1,0 +1,196 @@
+/*movie.css*/
+
+* {
+    font-family: fantasy;
+}
+
+main {
+    background-image: url("resource/img/intro_bg.jpg");
+    background-size: cover;
+    background-position: top;
+}
+
+body {
+    color: white;
+}
+
+.title {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+    max-width: 100%;
+    padding-top: 50px;
+    padding-bottom: 10px;
+    margin-left: 20%;
+}
+
+.intro-img {
+    display: block;
+    width: 50%;
+    margin-left: 20%;
+}
+
+.title,
+.time-calculater {
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.time-calculater {
+    padding: 20px;
+    border: 1px solid #ddd;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.time-calculater input {
+    width: 70px;
+    padding: 10px;
+    font-size: 20px;
+    border: 1px solid #ddd;
+}
+
+.time-calculater button {
+    font-size: 18px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.time-calculater p {
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+.time-calculater input {
+    padding: 10px;
+    font-size: 20px;
+    border: 1px solid #ddd;
+}
+
+table {
+    margin-left: 20%;
+}
+
+.video-desc {
+    font-size: 24px;
+    margin: 5px 0;
+    text-align: center;
+}
+
+.user-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    padding: 20px;
+    border: 1px solid #ddd;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.input-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.user-info label {
+    font-size: 20px;
+    margin-right: 5px;
+}
+
+.user-info input {
+    width: 70%;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+.user-info input[type="submit"] {
+    display: block;
+    margin: 0 auto;
+    /* Center it horizontally with automatic margins */
+    width: auto;
+    font-size: 20px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+
+}
+
+.user-info input[type="submit"]:hover {
+    background-color: #555;
+}
+
+.invalid-input {
+    border: 10px solid red;
+    box-shadow: 0 0 10px red;
+}
+
+.input-container {
+    position: relative;
+}
+
+.user-info label {
+    font-size: 20px;
+}
+
+label {
+    display: inline-block;
+    margin-left: 0;
+    vertical-align: middle;
+}
+.input-container label[for="anima"] {
+    margin-left: 150px
+}
+.input-container input[type="checkbox"] {
+    margin-right: 150px;
+}
+
+.error-message {
+    display: block;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    margin-top: 5px;
+    color: red;
+    font-size: 14px;
+    text-shadow: -1px -1px 0 #000,
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000;
+}
+
+.user-info-tittle {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+    font-weight: bold;
+    color: #FFFFFF;
+    text-align: center;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    animation: shadow-animation 3s ease-in-out infinite;
+}
+
+@keyframes shadow-animation {
+
+    0%,
+    100% {
+        text-shadow: 2px 2px 4px #000000;
+    }
+
+    50% {
+        text-shadow: 4px 4px 8px #000000;
+    }
+}

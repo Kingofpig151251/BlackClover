@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="movie.css">
+    <title>BLACK♣CLOVER</title>
+</head>
+
+
+
+<body>
+
+    <div class="header" id="header">
+        <a class="header-logo" href="index.html"><img src="resource/img/BlackCloverLogo1.png"
+                alt="BlackCloverLogo1"></a>
+        <div class="header-links">
+            <a href="introduction.html"><img src="resource/img/Introduction.png" class="Introduction"></a>
+            <a href="character.html"><img src="resource/img/Character.png" class="Character"></a>
+            <a href="movie.html"><img src="resource/img/Movie.png" class="Movie"></a>
+        </div>
+    </div>
+
+    <main>
+
+        <div>
+            <img src="resource/img/movie_title.png" class="title">
+            <div class="time-calculater">
+                <span>If you want to watch </span>
+                <input type="number" id="episodes" min="1" max="170" value="1"> Episodes
+                <button onclick="calculateTime()">Calculate</button>
+                <p id="result"></p>
+            </div>
+
+            <table class="movie-table">
+                <table>
+                    <table>
+                        <tr>
+                            <td>
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/_6KZI74zKfE"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    allowfullscreen></iframe>
+                                <p class="video-desc">Black Clover - Opening 1 | Haruka Mirai</p>
+                            </td>
+                            <td>
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/5zSx8QD-fkA"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    allowfullscreen></iframe>
+                                <p class="video-desc">Black Clover - Opening 2 | PAiNT it BLACK</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/LnATgmx7tGo"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    allowfullscreen></iframe>
+                                <p class="video-desc">Black Clover - Opening 3 | Black Rover</p>
+                            </td>
+                            <td>
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/URwMxNidO-8"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    allowfullscreen></iframe>
+                                <p class="video-desc">Black Clover - Opening 4 | Guess Who Is Back</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/1YRBgrcaHdw"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    allowfullscreen></iframe>
+                                <p class="video-desc">Black Clover - Opening 5 | Gamushara</p>
+                            </td>
+                            <td>
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/6edby9ExKOE"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    allowfullscreen></iframe>
+                                <p class="video-desc">Black Clover - Opening 6 | Rakugaki Peiji</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/fFd1VkGc-SI"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    allowfullscreen></iframe>
+                                <p class="video-desc">Black Clover - Opening 7 | JUSTadICE</p>
+                            </td>
+                            <td>
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/WvBZrhju0QY"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    allowfullscreen></iframe>
+                                <p class="video-desc">Black Clover opening 9 | Right now byEMPiRE
+                                </p>
+                            </td>
+                        </tr>
+                    </table>
+        </div>
+        <div class="user-info">
+            <form id="user-info-form" onsubmit="return validateForm(true)">
+                <p class="user-info-tittle">Subscribe to receive the latest information about Black Clover:</p>
+                <div class="input-container">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" oninput="validateForm(false)" required>
+                    <span id="name-error" class="error-message"></span>
+                </div>
+                <div class="input-container">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" oninput="validateForm(false)" required>
+                    <span id="email-error" class="error-message"></span>
+                </div>
+                <div class="input-container">
+                    <label for="anima">Anima</label>
+                    <input type="checkbox" id="anima">
+                    <label for="comics">Comics</label>
+                    <input type="checkbox" id="comics">
+                    <span id="checkbox-error" class="error-message"></span>
+                </div>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </main>
+
+    <div><br><br><br><br><br><br></div>
+    <div class="footer">
+        <a href="#header"><button>Top</button></a>
+        <img src="resource/img/BlackCloverLogo2.png">
+        <audio class="audio-background" autoplay loop controls>
+            <source src="resource/BlackCloverAudio.m4a">
+        </audio>
+    </div>
+</body>
+<script> function calculateTime() {
+        let episodes = document.getElementById('episodes').value;
+        const episodeTime = 22;
+        const hours = Math.floor(episodes * episodeTime / 60);
+        const minutes = episodes * episodeTime % 60;
+        let result = `It will take you ${hours} hours and ${minutes} minutes to finish ${episodes} episodes.`;
+        document.getElementById('result').innerHTML = result;
+    }
+
+    function validateForm(showErrors) {
+        const nameInput = document.getElementById('name');
+        const emailInput = document.getElementById('email');
+        const nameError = document.getElementById('name-error');
+        const emailError = document.getElementById('email-error');
+        const name = nameInput.value;
+        const email = emailInput.value;
+        let isValid = true;
+        if (showErrors) {
+            if (name.trim() === '') {
+                nameInput.classList.add('invalid-input');
+                nameError.style.display = 'inline';
+                isValid = false;
+            } else {
+                nameInput.classList.remove('invalid-input');
+                nameError.style.display = 'none';
+            }
+
+            const firstChar = name.trim().charAt(0);
+            const isUppercase = /^[A-Z]$/;
+            if (!isUppercase.test(firstChar)) {
+                nameInput.classList.add('invalid-input');
+                nameError.textContent = 'Please start with a uppercase letter.';
+                nameError.style.display = 'inline';
+                isValid = false;
+            } else {
+                nameInput.classList.remove('invalid-input');
+                nameError.style.display = 'none';
+            }
+
+            const emailRight = /^[\w-]+(\.[\w-]+)*@([\w-]+\.)+[a-zA-Z]{2,7}$/;
+            if (!emailRight.test(email)) {
+                emailInput.classList.add('invalid-input');
+                emailError.textContent = 'Please enter a email address with @ and .com.';
+                emailError.style.display = 'inline';
+                isValid = false;
+            } else {
+                emailInput.classList.remove('invalid-input');
+                emailError.style.display = 'none';
+            }
+            const animaCheckbox = document.getElementById('anima');
+            const comicsCheckbox = document.getElementById('comics');
+            const checkboxError = document.getElementById('checkbox-error');
+
+            if (!animaCheckbox.checked && !comicsCheckbox.checked) {
+                checkboxError.textContent = 'Please select at least one option (Anima or Comics).';
+                checkboxError.style.display = 'inline';
+                isValid = false;
+            } else {
+                checkboxError.style.display = 'none';
+            }
+
+            if (isValid && showErrors) {
+                alert('SUBSCRIBE SUCCESSFUL! Thank you for subscribing。');
+            }
+        }
+
+        return isValid;
+    }
+</script>
+
+</html>
